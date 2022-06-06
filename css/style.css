@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Vazir;
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.eot?#iefix") format("Vazir-opentype"), url("../fonts/Vazir.woff") format("woff"), url("../fonts/Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.container {
+  padding: 1rem 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-dark, .btn-white, .btn-primary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: Vazir; }
+
+.text_center {
+  text-align: center; }
+
+.btn-dark {
+  background: #131313;
+  color: #eeeeee; }
+.btn-white {
+  background-color: #eeeeee;
+  color: #111111; }
+.btn-primary {
+  background-color: #ffb000;
+  color: #000a1b; }
+  .btn-primary:hover {
+    background-color: #131313;
+    color: white; }
+
+* {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  font-family: "Vazir";
+  background-color: rgba(124, 124, 124, 0.13);
+  color: #131313; }
+
+a {
+  text-decoration: none;
+  color: #eeeeee; }
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #eeeeee; }
+  .navbar .primarylogo {
+    color: #ffb000; }
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none; }
+    .navbar ul li {
+      margin: 0.5rem 2rem;
+      border-bottom: 3px solid #00000000;
+      transition-duration: 1s; }
+      .navbar ul li:hover {
+        border-bottom: 3px solid #ffb000; }
+
+.header-home {
+  background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)), url("../img/slid img.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #eeeeee; }
+.header-bilord-text {
+  text-align: center;
+  justify-items: center;
+  line-height: 3pc;
+  padding-top: 10pc; }
+
+#home-1 .item {
+  margin-top: 4rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-1 .item .fas {
+    color: #ffb000; }
+#home-2 .item {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+#home-2 li {
+  line-height: 2;
+  list-style: none; }
+  #home-2 li.items-title {
+    font-size: 1.5rem; }
+  #home-2 li.items-number {
+    font-size: 2rem;
+    font-weight: bold; }
+#home-2 div {
+  padding: 3rem 0; }
+  #home-2 div:nth-child(even) {
+    background-color: #ffb000; }
+  #home-2 div:nth-child(odd) {
+    background-color: #eeeeee; }
+#home-3 .process {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #home-3 .process-icon {
+    position: relative;
+    background-color: #131313;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 2rem;
+    color: white;
+    transition-duration: 0.5s; }
+  #home-3 .process-step {
+    position: absolute;
+    top: 0;
+    font-size: 29px;
+    background-color: #131313;
+    border-radius: 50%;
+    padding: 1rem;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    color: white;
+    text-align: center;
+    line-height: 15px; }
+  #home-3 .process-icon:hover {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background-color: #ffb000; }
+
+.footer {
+  height: 5pc;
+  width: 100%;
+  background-color: #131313;
+  color: white;
+  padding-top: 20px; }
+  .footer .mainfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .footer .mainfooter .socialmedia i {
+      height: 30px;
+      width: 30px;
+      border: 2px solid #eeeeee;
+      border-radius: 50%;
+      line-height: 33px;
+      padding: 6px;
+      text-align: center;
+      font-size: 20px;
+      margin-right: 7px; }
+      .footer .mainfooter .socialmedia i:hover {
+        background-color: #ffb000; }
+
+@media all and (max-width: 820px) {
+  .header-home {
+    height: 30rem; }
+    .header-home p {
+      display: none; }
+    .header-home h1 {
+      padding-bottom: 20px;
+      font-size: 25px; }
+  .header-bilord-text {
+    padding-top: 7pc; }
+
+  #home-1 .item,
+  #home-3 .process {
+    grid-template-columns: repeat(2, 1fr); } }
+@media all and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; }
+    .navbar ul {
+      order: 2; }
+      .navbar ul li {
+        margin: 15px; }
+    .navbar h1 {
+      padding-bottom: 0px; }
+
+  #home-2 .item {
+    grid-template-columns: repeat(1, 1fr); } }
+@media all and (max-width: 710px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; }
+    .navbar ul {
+      order: 2; } }
+
+/*# sourceMappingURL=style.css.map */

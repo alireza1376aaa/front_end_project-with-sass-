@@ -1,0 +1,46 @@
+.container{
+  padding: 1rem 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: Vazir;
+  
+}
+
+.text_center{
+
+  text-align: center;
+}
+
+.btn{
+
+  &-dark{
+    @extend %btn-shared;
+    background: $darkcolor;
+    color: #eeeeee;
+  }
+  &-white{
+    @extend %btn-shared;
+    background-color: $whitecolor;
+    color: #111111;
+  }
+
+  &-primary{
+    @extend %btn-shared;
+    background-color:$maincolor;
+    color: #000a1b;
+    &:hover{
+      background-color: $darkcolor;
+      color: white;
+    }
+  }
+
+}
